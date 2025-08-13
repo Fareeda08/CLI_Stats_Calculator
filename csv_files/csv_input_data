@@ -1,0 +1,40 @@
+ The input_data.csv file is your sample dataset used for:
+
+Descriptive statistics (mean, median, std dev, etc.)
+
+Correlation analysis
+
+Hypothesis testing (t-tests, chi-square)
+
+Histogram and frequency distribution
+
+Let’s create a clean, multipurpose CSV file that demonstrates all core features of your CLI calculator.
+
+
+StudentID,MathScore,EnglishScore,Gender
+S001,78,82,M
+S002,85,79,F
+S003,69,70,F
+S004,90,88,M
+S005,75,75,F
+S006,60,64,M
+S007,73,77,F
+S008,88,85,M
+S009,77,79,F
+S010,81,83,M
+
+
+Column Descriptions
+Column	Type	Use
+StudentID	String	Identifier (not used in calculations)
+MathScore	Numeric	For descriptive stats, correlation, t-tests
+EnglishScore	Numeric	For correlation and t-tests
+Gender	Categorical	For chi-square tests (e.g., count of M/F)
+
+This CSV Supports:
+Feature	How
+Mean, Median, Mode	From MathScore or EnglishScore
+Skewness, Kurtosis	On any numeric column
+Correlation	Between MathScore and EnglishScore
+Two-sample t-test	Compare scores by gender (F vs. M if separated)
+Chi-square test	On Gender frequency
